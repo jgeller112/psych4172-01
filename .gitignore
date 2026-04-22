@@ -6,3 +6,5 @@
 .Ruserdata
 Rplots.pdf
 .DS_Store
+
+**/*.quarto_ipynb
