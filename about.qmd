@@ -1,0 +1,96 @@
+---
+title: ""
+toc: false
+page-layout: full
+---
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+##  {.section-heading}
+
+About the Instructor
+
+::::::::::::::::::: info-cards
+:::::: info-card
+<i class="fa-solid fa-user"></i>
+
+<div>
+
+::: info-label
+Instructor
+:::
+
+::: info-value
+Dr. Jason Geller
+:::
+
+</div>
+::::::
+
+:::::: info-card
+<i class="fa-solid fa-building-columns"></i>
+
+<div>
+
+::: info-label
+Department
+:::
+
+::: info-value
+Psychology & Neuroscience
+:::
+
+</div>
+::::::
+
+:::::: info-card
+<i class="fa-solid fa-envelope"></i>
+
+<div>
+
+::: info-label
+Email
+:::
+
+::: info-value
+TBD
+:::
+
+</div>
+::::::
+
+:::::: info-card
+<i class="fa-solid fa-door-open"></i>
+
+<div>
+
+::: info-label
+Office Hours
+:::
+
+::: info-value
+TBD
+:::
+
+</div>
+::::::
+:::::::::::::::::::
+
+##  {.section-heading}
+
+About This Course
+
+This research practicum is offered through the [Department of Psychology and Neuroscience](https://www.bc.edu/bc-web/schools/mcas/departments/psychology-neuroscience.html) at Boston College. The course is designed for students in the Human Neuroscience Laboratory (HNL) who want hands-on experience with the full lifecycle of rigorous, transparent research.
+
+### Why Replication Matters
+
+Psychology has undergone a major reckoning with the reliability of its findings. Large-scale replication projects have shown that many classic results are fragile or fail to replicate entirely. This course treats that challenge not as a crisis to lament, but as an opportunity to train the next generation of researchers in practices that make science self-correcting.
+
+### What You Will Do
+
+-   **Select** a published study and evaluate it for replication feasibility
+-   **Preregister** your hypotheses, design, and analysis plan on OSF
+-   **Program** the experiment and run participants in the HNL
+-   **Analyze** data using reproducible, scripted workflows (R + Quarto)
+-   **Write** a fully reproducible manuscript
+-   **Present** your results in a conference-style poster session

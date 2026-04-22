@@ -1,0 +1,94 @@
+---
+title: ""
+toc: false
+page-layout: full
+---
+
+```{=html}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<div class="schedule-legend">
+  <span class="legend-item"><span class="fa-solid fa-book-open-reader"></span> Readings — complete <em>before</em> class</span>
+  <span class="legend-item"><span class="fa-solid fa-chalkboard"></span> Slides & class materials</span>
+  <span class="legend-item"><span class="fa-solid fa-pen-ruler"></span> Assignment due</span>
+</div>
+```
+
+##  {.section-heading}
+
+Course Schedule
+
+```{r}
+#| echo: false
+#| output: asis
+
+library(yaml)
+
+schedule <- yaml::read_yaml("schedule.yml")
+
+# -- icon helper: use <span> not <i> so Quarto won't convert to <em> --
+fa <- function(name, extra_class = "") {
+  cls <- paste0("fa-solid fa-", name)
+  if (nzchar(extra_class)) cls <- paste(cls, extra_class)
+  paste0('<span class="', cls, '"></span>')
+}
+
+# -- build icon-cell helper --
+icon_cell <- function(url = NULL, title = "", icon, css_class = "") {
+  if (is.null(url)) return('<td class="icon-cell"></td>')
+  paste0(
+    '<td class="icon-cell">',
+    '<a class="content-link ', css_class, '" href="', url, '" title="', title, '">',
+    fa(icon),
+    '</a></td>'
+  )
+}
+
+# -- start table --
+cat('<table class="schedule-table">\n')
+cat('<thead><tr>')
+cat('<th style="width:6%">Week</th>')
+cat('<th style="width:10%">Date</th>')
+cat('<th style="width:40%">Topic</th>')
+cat(paste0('<th style="width:15%; text-align:center">', fa("book-open-reader"), ' Content</th>'))
+cat(paste0('<th style="width:15%; text-align:center">', fa("chalkboard"), ' Class</th>'))
+cat(paste0('<th style="width:14%; text-align:center">', fa("pen-ruler"), ' Assign.</th>'))
+cat('</tr></thead>\n<tbody>\n')
+
+for (part in schedule) {
+  # section divider
+  cat(paste0(
+    '<tr class="section-divider"><td colspan="6">',
+    fa(part$section_icon), '&nbsp; ', part$section, '</td></tr>\n'
+  ))
+
+  for (w in part$weeks) {
+    is_break <- isTRUE(w[["break"]])
+
+    if (is_break) {
+      cat(paste0(
+        '<tr class="thanksgiving-row">',
+        '<td class="week-num">', w$week, '</td>',
+        '<td>', w$date, '</td>',
+        '<td colspan="4">', fa(w$icon, "topic-icon"), '<em>', w$topic, '</em></td>',
+        '</tr>\n'
+      ))
+    } else {
+      assign_class <- if (isTRUE(w$milestone)) "milestone" else "assign"
+
+      cat(paste0(
+        '<tr>',
+        '<td class="week-num">', w$week, '</td>',
+        '<td>', w$date, '</td>',
+        '<td>', fa(w$icon, "topic-icon"), w$topic, '</td>',
+        icon_cell(w$content, w$content_title %||% "", "book-open-reader", ""),
+        icon_cell(w$class, w$class_title %||% "", "chalkboard", ""),
+        icon_cell(w$assign, w$assign_title %||% "", "pen-ruler", assign_class),
+        '</tr>\n'
+      ))
+    }
+  }
+}
+
+cat('</tbody></table>\n')
+```

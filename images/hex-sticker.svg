@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 462" width="400" height="462">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#98002E"/>
+      <stop offset="100%" style="stop-color:#6E0022"/>
+    </linearGradient>
+    <linearGradient id="brainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF"/>
+      <stop offset="100%" style="stop-color:#DBCBA0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="30%">
+      <stop offset="0%" style="stop-color:#BC9B6A; stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#BC9B6A; stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Hex background -->
+  <polygon points="200,6 388,108 388,354 200,456 12,354 12,108"
+           fill="url(#bg-grad)" stroke="#BC9B6A" stroke-width="8"
+           stroke-linejoin="round"/>
+
+  <!-- Inner hex accent -->
+  <polygon points="200,24 372,118 372,344 200,438 28,344 28,118"
+           fill="none" stroke="#BC9B6A" stroke-width="1.5" stroke-opacity="0.25"
+           stroke-linejoin="round"/>
+
+  <!-- Glow behind brain -->
+  <circle cx="200" cy="185" r="120" fill="url(#glow)"/>
+
+  <!-- ══ Brain (scaled to fit) ══ -->
+  <g transform="translate(200,178) scale(0.85)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Left hemisphere -->
+    <path d="M -2,-48 C -8,-50 -18,-50 -26,-46 C -34,-42 -40,-34 -44,-24
+             C -48,-14 -50,-4 -48,6 C -52,8 -56,14 -56,22
+             C -56,30 -52,36 -48,40 C -48,46 -44,52 -36,54
+             C -30,56 -22,56 -16,54 C -12,56 -6,56 -2,54"
+          fill="url(#brainGrad)" fill-opacity="0.95" stroke="#DBCBA0" stroke-width="1.5"/>
+    <!-- Right hemisphere -->
+    <path d="M 2,-48 C 8,-50 18,-50 26,-46 C 34,-42 40,-34 44,-24
+             C 48,-14 50,-4 48,6 C 52,8 56,14 56,22
+             C 56,30 52,36 48,40 C 48,46 44,52 36,54
+             C 30,56 22,56 16,54 C 12,56 6,56 2,54"
+          fill="url(#brainGrad)" fill-opacity="0.9" stroke="#DBCBA0" stroke-width="1.5"/>
+    <!-- Fissure -->
+    <line x1="0" y1="-48" x2="0" y2="54" stroke="#98002E" stroke-width="1.5" stroke-opacity="0.5"/>
+    <!-- Sulci left -->
+    <path d="M -2,-20 C -14,-18 -26,-12 -38,-2" stroke="#98002E" stroke-width="1.2" stroke-opacity="0.45"/>
+    <path d="M -2,4 C -12,6 -24,10 -36,18" stroke="#98002E" stroke-width="1.2" stroke-opacity="0.45"/>
+    <path d="M -2,26 C -10,28 -22,32 -34,38" stroke="#98002E" stroke-width="1.2" stroke-opacity="0.45"/>
+    <path d="M -16,-44 C -22,-36 -28,-26 -30,-18" stroke="#98002E" stroke-width="1" stroke-opacity="0.3"/>
+    <path d="M -40,-14 C -44,-4 -48,8 -46,18" stroke="#98002E" stroke-width="1" stroke-opacity="0.3"/>
+    <!-- Sulci right -->
+    <path d="M 2,-20 C 14,-18 26,-12 38,-2" stroke="#98002E" stroke-width="1.2" stroke-opacity="0.45"/>
+    <path d="M 2,4 C 12,6 24,10 36,18" stroke="#98002E" stroke-width="1.2" stroke-opacity="0.45"/>
+    <path d="M 2,26 C 10,28 22,32 34,38" stroke="#98002E" stroke-width="1.2" stroke-opacity="0.45"/>
+    <path d="M 16,-44 C 22,-36 28,-26 30,-18" stroke="#98002E" stroke-width="1" stroke-opacity="0.3"/>
+    <path d="M 40,-14 C 44,-4 48,8 46,18" stroke="#98002E" stroke-width="1" stroke-opacity="0.3"/>
+    <!-- Brain stem -->
+    <path d="M -6,54 C -6,60 -4,66 0,70 C 4,66 6,60 6,54"
+          fill="url(#brainGrad)" fill-opacity="0.9" stroke="#DBCBA0" stroke-width="1.5"/>
+    <!-- Neural nodes -->
+    <circle cx="-20" cy="-30" r="2.5" fill="#BC9B6A" opacity="0.8"/>
+    <circle cx="22" cy="-28" r="2.5" fill="#BC9B6A" opacity="0.8"/>
+    <circle cx="-32" cy="8" r="2" fill="#BC9B6A" opacity="0.7"/>
+    <circle cx="34" cy="10" r="2" fill="#BC9B6A" opacity="0.7"/>
+    <circle cx="-14" cy="40" r="2" fill="#BC9B6A" opacity="0.7"/>
+    <circle cx="16" cy="42" r="2" fill="#BC9B6A" opacity="0.7"/>
+    <circle cx="0" cy="-36" r="2" fill="#BC9B6A" opacity="0.8"/>
+    <!-- Neural connections -->
+    <line x1="-20" y1="-30" x2="0" y2="-36" stroke="#BC9B6A" stroke-width="0.8" opacity="0.5"/>
+    <line x1="0" y1="-36" x2="22" y2="-28" stroke="#BC9B6A" stroke-width="0.8" opacity="0.5"/>
+    <line x1="-20" y1="-30" x2="-32" y2="8" stroke="#BC9B6A" stroke-width="0.8" opacity="0.5"/>
+    <line x1="22" y1="-28" x2="34" y2="10" stroke="#BC9B6A" stroke-width="0.8" opacity="0.5"/>
+    <line x1="-32" y1="8" x2="-14" y2="40" stroke="#BC9B6A" stroke-width="0.8" opacity="0.5"/>
+    <line x1="34" y1="10" x2="16" y2="42" stroke="#BC9B6A" stroke-width="0.8" opacity="0.5"/>
+    <line x1="-14" y1="40" x2="16" y2="42" stroke="#BC9B6A" stroke-width="0.8" opacity="0.5"/>
+  </g>
+
+  <!-- ══ Scientific method cycle (6 steps around brain) ══ -->
+  <!-- Dashed circle path -->
+  <circle cx="200" cy="185" r="95" fill="none" stroke="#BC9B6A" stroke-width="1.8"
+          stroke-opacity="0.4" stroke-dasharray="5,4"/>
+
+  <!-- 6 step nodes positioned around the circle -->
+  <!-- Step 1: Hypothesize (top center) -->
+  <circle cx="200" cy="88" r="4" fill="#BC9B6A" opacity="0.7"/>
+  <!-- Step 2: Preregister (top right) -->
+  <circle cx="282" cy="136" r="4" fill="#BC9B6A" opacity="0.7"/>
+  <!-- Step 3: Collect Data (bottom right) -->
+  <circle cx="282" cy="234" r="4" fill="#BC9B6A" opacity="0.7"/>
+  <!-- Step 4: Analyze (bottom center) -->
+  <circle cx="200" cy="282" r="4" fill="#BC9B6A" opacity="0.7"/>
+  <!-- Step 5: Reproduce (bottom left) -->
+  <circle cx="118" cy="234" r="4" fill="#BC9B6A" opacity="0.7"/>
+  <!-- Step 6: Replicate (top left) -->
+  <circle cx="118" cy="136" r="4" fill="#BC9B6A" opacity="0.7"/>
+
+  <!-- Arrow connectors between nodes -->
+  <g fill="none" stroke="#DBCBA0" stroke-width="1.5" stroke-opacity="0.5"
+     marker-end="url(#arrowhead)">
+  </g>
+
+  <!-- Small arrowheads between steps -->
+  <defs>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3"
+            orient="auto" markerUnits="strokeWidth">
+      <path d="M 0,0 L 6,3 L 0,6 Z" fill="#DBCBA0" fill-opacity="0.6"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke="#DBCBA0" stroke-width="1.3" stroke-opacity="0.5" marker-end="url(#arrow)">
+    <line x1="212" y1="90" x2="268" y2="128"/>
+    <line x1="284" y1="150" x2="284" y2="220"/>
+    <line x1="274" y1="242" x2="214" y2="278"/>
+    <line x1="188" y1="278" x2="128" y2="242"/>
+    <line x1="118" y1="220" x2="118" y2="150"/>
+    <line x1="128" y1="128" x2="186" y2="92"/>
+  </g>
+
+  <!-- Step labels -->
+  <g font-family="Source Sans Pro, Helvetica Neue, Arial, sans-serif" font-size="8.5"
+     fill="#DBCBA0" text-anchor="middle" font-weight="700" letter-spacing="0.8">
+    <text x="200" y="76">HYPOTHESIZE</text>
+    <text x="310" y="134">PREREGISTER</text>
+    <text x="318" y="240">COLLECT DATA</text>
+    <text x="200" y="302">ANALYZE</text>
+    <text x="82" y="240">REPRODUCE</text>
+    <text x="90" y="134">REPLICATE</text>
+  </g>
+
+  <!-- ══ Course title ══ -->
+  <text x="200" y="342" font-family="Source Sans Pro, Helvetica Neue, Arial, sans-serif"
+        font-size="10" fill="#FFFFFF" text-anchor="middle" font-weight="700"
+        letter-spacing="0.8">RESEARCH PRACTICUM IN</text>
+  <text x="200" y="359" font-family="Source Sans Pro, Helvetica Neue, Arial, sans-serif"
+        font-size="12" fill="#FFFFFF" text-anchor="middle" font-weight="700"
+        letter-spacing="1">REPLICABLE &amp; REPRODUCIBLE</text>
+  <text x="200" y="376" font-family="Source Sans Pro, Helvetica Neue, Arial, sans-serif"
+        font-size="12" fill="#FFFFFF" text-anchor="middle" font-weight="700"
+        letter-spacing="1">COGNITIVE NEUROSCIENCE</text>
+
+  <!-- Course code -->
+  <text x="200" y="396" font-family="Source Sans Pro, Helvetica Neue, Arial, sans-serif"
+        font-size="9" fill="#BC9B6A" text-anchor="middle" font-weight="600"
+        letter-spacing="1">PSYC4172-01 · BOSTON COLLEGE</text>
+
+  <!-- Top accent -->
+  <text x="200" y="58" font-family="Source Sans Pro, Helvetica Neue, Arial, sans-serif"
+        font-size="9.5" fill="#DBCBA0" text-anchor="middle" font-weight="600"
+        letter-spacing="2">FALL 2026</text>
+
+</svg>

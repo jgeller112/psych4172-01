@@ -1,0 +1,154 @@
+# ─── Course Schedule Data ───
+# Edit this file to update the schedule. The schedule.qmd reads it automatically.
+#
+# Fields per week:
+#   week:       Week number (use "—" for breaks)
+#   date:       Date string
+#   topic:      Topic title
+#   icon:       Font Awesome icon name (without "fa-solid fa-" prefix)
+#   section:    (optional) Section divider label — only on first week of each part
+#   content:    (optional) Reading link URL; set to "#" as placeholder
+#   content_title: (optional) Tooltip for reading icon
+#   class:      (optional) Slides/class link URL; set to "#" as placeholder
+#   class_title:   (optional) Tooltip for class icon
+#   assign:     (optional) Assignment link URL; set to "#" as placeholder
+#   assign_title:  (optional) Tooltip for assignment icon
+#   milestone:  (optional) true if assignment is a major milestone (gets highlighted)
+#   break:      (optional) true for holiday/no-class weeks
+
+- section: "Part I: Foundations"
+  section_icon: book-open
+  weeks:
+
+  - week: 1
+    date: Sep 3
+    topic: Welcome & Course Overview
+    icon: door-open
+    class: "#"
+    class_title: "Slides: Welcome"
+
+  - week: 2
+    date: Sep 10
+    topic: The Replication Crisis
+    icon: triangle-exclamation
+    content: "#"
+    content_title: "Reading: Open Science Collaboration (2015)"
+    class: "#"
+    class_title: "Slides: Replication Crisis"
+
+  - week: 3
+    date: Sep 17
+    topic: Open Science Practices & Tools
+    icon: lock-open
+    content: "#"
+    content_title: "Reading: Nosek et al. (2015)"
+    class: "#"
+    class_title: "Slides: Open Science"
+    assign: "#"
+    assign_title: "Team Formation"
+
+  - week: 4
+    date: Sep 24
+    topic: Preregistration & Registered Reports
+    icon: file-signature
+    content: "#"
+    content_title: "Reading: Nosek et al. (2018)"
+    class: "#"
+    class_title: "Slides: Preregistration"
+
+- section: "Part II: Study Design & Development"
+  section_icon: flask
+  weeks:
+
+  - week: 5
+    date: Oct 1
+    topic: Choosing a Study & Power Analysis
+    icon: magnifying-glass
+    content: "#"
+    content_title: "Reading: Simonsohn (2015)"
+    class: "#"
+    class_title: "Slides: Power Analysis"
+    assign: "#"
+    assign_title: "Study Selected"
+
+  - week: 6
+    date: Oct 8
+    topic: "Experiment Programming (PsychoPy / E-Prime)"
+    icon: laptop-code
+    class: "#"
+    class_title: "Workshop: Experiment Scripting"
+
+  - week: 7
+    date: Oct 15
+    topic: Piloting & IRB Considerations
+    icon: vial
+    class: "#"
+    class_title: "Slides: Piloting & IRB"
+    assign: "#"
+    assign_title: "Preregistration Due"
+    milestone: true
+
+- section: "Part III: Data Collection & Analysis"
+  section_icon: chart-line
+  weeks:
+
+  - week: 8
+    date: Oct 22
+    topic: Data Collection Begins
+    icon: users-gear
+    class: "#"
+    class_title: "Lab: HNL Sessions"
+
+  - week: 9
+    date: Oct 29
+    topic: "Reproducible Workflows: Git & R Projects"
+    icon: code-branch
+    content: "#"
+    content_title: "Reading: Bryan (2018)"
+    class: "#"
+    class_title: "Workshop: Git & R Projects"
+
+  - week: 10
+    date: Nov 5
+    topic: "Data Management, Documentation & Sharing"
+    icon: database
+    content: "#"
+    content_title: "Reading: FAIR Principles"
+    class: "#"
+    class_title: "Workshop: OSF Setup"
+    assign: "#"
+    assign_title: "Data Collection Complete"
+
+  - week: 11
+    date: Nov 12
+    topic: Data Analysis & Visualization
+    icon: chart-bar
+    class: "#"
+    class_title: "Workshop: Analysis in R / Quarto"
+
+- section: "Part IV: Writing & Presentation"
+  section_icon: pen-fancy
+  weeks:
+
+  - week: 12
+    date: Nov 19
+    topic: Reproducible Reports & Peer Review
+    icon: file-lines
+    class: "#"
+    class_title: "Workshop: Quarto Manuscripts"
+    assign: "#"
+    assign_title: "Draft Due"
+
+  - week: "—"
+    date: Nov 26
+    topic: "No Class — Thanksgiving Break"
+    icon: wheat-awn
+    break: true
+
+  - week: 13
+    date: Dec 3
+    topic: Conference-Style Poster Presentations & Wrap-Up
+    icon: person-chalkboard
+    assign: "#"
+    assign_title: "Poster Session & Final Report Due"
+    milestone: true
