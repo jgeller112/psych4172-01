@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "schedule.html#section",
+    "href": "schedule.html#section",
+    "title": "PSYC4172-01: Replicable & Reproducible Cognitive Neuroscience",
+    "section": "",
+    "text": "Course Schedule\n\n\n\n\nWeek\n\n\nDate\n\n\nTopic\n\n\n Content\n\n\n Class\n\n\n Assign.\n\n\n\n\n\n\n  Part I: Foundations\n\n\n\n\n1\n\n\nSep 3\n\n\nWelcome & Course Overview\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nSep 10\n\n\nThe Replication Crisis\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nSep 17\n\n\nOpen Science Practices & Tools\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nSep 24\n\n\nPreregistration & Registered Reports\n\n\n\n\n\n\n\n\n\n\n\n\n  Part II: Study Design & Development\n\n\n\n\n5\n\n\nOct 1\n\n\nChoosing a Study & Power Analysis\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nOct 8\n\n\nExperiment Programming (PsychoPy / E-Prime)\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nOct 15\n\n\nPiloting & IRB Considerations\n\n\n\n\n\n\n\n\n\n\n\n\n  Part III: Data Collection & Analysis\n\n\n\n\n8\n\n\nOct 22\n\n\nData Collection Begins\n\n\n\n\n\n\n\n\n\n\n\n9\n\n\nOct 29\n\n\nReproducible Workflows: Git & R Projects\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nNov 5\n\n\nData Management, Documentation & Sharing\n\n\n\n\n\n\n\n\n\n\n\n\n\n11\n\n\nNov 12\n\n\nData Analysis & Visualization\n\n\n\n\n\n\n\n\n\n\n\n  Part IV: Writing & Presentation\n\n\n\n\n12\n\n\nNov 19\n\n\nReproducible Reports & Peer Review\n\n\n\n\n\n\n\n\n\n\n\n\n—\n\n\nNov 26\n\n\nNo Class — Thanksgiving Break\n\n\n\n\n13\n\n\nDec 3\n\n\nConference-Style Poster Presentations & Wrap-Up"
+  },
+  {
+    "objectID": "index.html#section",
+    "href": "index.html#section",
+    "title": "Replicable & Reproducible Cognitive Neuroscience",
+    "section": "",
+    "text": "Course Description\nThis hands-on practicum introduces students to the principles and practices of open, replicable, and reproducible psychological science. Students gain experience with the full research lifecycle, from preregistration and open data management to transparent analysis and reporting, with replication and reproducibility emphasized as the cornerstones of cumulative scientific progress.\nThroughout the semester, students work in teams to design and conduct a close replication of a published psychology experiment using the Human Neuroscience Laboratory (HNL) facilities. The course covers key topics including open science practices, reproducible research workflows, data sharing and documentation, scientific integrity, experiment development and data analysis.\nBy the end of the course, students will have completed a preregistered replication study, produced a fully reproducible research report, and presented their findings in a conference-style format."
+  },
+  {
+    "objectID": "index.html#section-1",
+    "href": "index.html#section-1",
+    "title": "Replicable & Reproducible Cognitive Neuroscience",
+    "section": "",
+    "text": "Learning Goals\n\n\n\n\n\n\nUnderstand the principles of replication and reproducibility and their role in cumulative science\n\n\n\n\n\n\n\nDevelop and submit a preregistration for a replication study\n\n\n\n\n\n\n\nDesign and run a cognitive neuroscience experiment using HNL facilities\n\n\n\n\n\n\n\nBuild reproducible analysis pipelines using R, Quarto, and version control\n\n\n\n\n\n\n\nPractice open data management, documentation, and sharing via OSF\n\n\n\n\n\n\n\nPresent findings in a professional conference-style poster session"
+  },
+  {
+    "objectID": "about.html#section",
+    "href": "about.html#section",
+    "title": "PSYC4172-01: Replicable & Reproducible Cognitive Neuroscience",
+    "section": "",
+    "text": "About the Instructor\n\n\n\n\n\nInstructor\n\n\nDr. Jason Geller\n\n\n\n\n\n\n\nDepartment\n\n\nPsychology & Neuroscience\n\n\n\n\n\n\n\nEmail\n\n\nTBD\n\n\n\n\n\n\n\nOffice Hours\n\n\nTBD"
+  },
+  {
+    "objectID": "about.html#section-1",
+    "href": "about.html#section-1",
+    "title": "PSYC4172-01: Replicable & Reproducible Cognitive Neuroscience",
+    "section": "",
+    "text": "About This Course\nThis research practicum is offered through the Department of Psychology and Neuroscience at Boston College. The course is designed for students in the Human Neuroscience Laboratory (HNL) who want hands-on experience with the full lifecycle of rigorous, transparent research.\n\nWhy Replication Matters\nPsychology has undergone a major reckoning with the reliability of its findings. Large-scale replication projects have shown that many classic results are fragile or fail to replicate entirely. This course treats that challenge not as a crisis to lament, but as an opportunity to train the next generation of researchers in practices that make science self-correcting.\n\n\nWhat You Will Do\n\nSelect a published study and evaluate it for replication feasibility\nPreregister your hypotheses, design, and analysis plan on OSF\nProgram the experiment and run participants in the HNL\nAnalyze data using reproducible, scripted workflows (R + Quarto)\nWrite a fully reproducible manuscript\nPresent your results in a conference-style poster session"
+  }
+]
