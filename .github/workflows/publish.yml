@@ -28,6 +28,8 @@ jobs:
         with:
           packages: |
             any::yaml
+            any::rmarkdown
+            any::knitr
 
       - name: Render and publish to gh-pages
         uses: quarto-dev/quarto-actions/publish@v2
